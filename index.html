@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dilip Kumar - DevOps & Cloud Engineer</title>
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --light-gray: #ecf0f1;
+      --dark-gray: #7f8c8d;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-gray);
+      color: var(--primary-color);
     }
+
     .container {
-      width: 100%;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
-      background-color: #fff;
-      padding: 40px;
-      box-sizing: border-box;
+      background: #fff;
+      padding: 50px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     }
-    h1, h2, h3 {
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 40px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-weight: normal;
       margin-top: 0;
+      color: var(--dark-gray);
     }
-    .header, .section {
-      margin-bottom: 30px;
+
+    .contact {
+      margin: 15px 0 30px;
     }
+
     .contact a {
+      color: var(--accent-color);
       margin-right: 15px;
       text-decoration: none;
-      color: #0366d6;
+      font-weight: 500;
     }
+
+    .section p {
+      line-height: 1.6;
+    }
+
     ul {
       padding-left: 20px;
+      line-height: 1.6;
     }
-    .subheading {
-      font-weight: bold;
-      margin-top: 20px;
-    }
+
     .job-title {
       font-weight: bold;
+      margin-top: 25px;
     }
+
     .job-period {
       float: right;
-      color: #888;
+      color: var(--dark-gray);
+      font-style: italic;
     }
+
     .clearfix::after {
       content: "";
-      clear: both;
       display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 768px) {
+      .job-period {
+        float: none;
+        display: block;
+        margin-top: 5px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <header>
       <h1>Dilip Kumar</h1>
       <h3>DevOps and Cloud Engineer</h3>
       <div class="contact">
         <a href="tel:+917857089254">📞 +91 78570 89254</a>
-        <a href="mailto:dilipkumar17072002@gmail.com">📧 dilipkumar17072002@gmail.com</a>
+        <a href="mailto:dilipkumar17072002@gmail.com">📧 Email</a>
         <a href="https://github.com/DiliipKumar" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/dilip-kumar-devops-cloud" target="_blank">LinkedIn</a>
       </div>
-    </div>
+    </header>
 
-    <div class="section">
+    <section class="section">
       <h2>Summary</h2>
       <p>Experienced DevOps and Cloud Engineer adept in Kubernetes orchestration and cloud infrastructure management. Skilled in automating deployment, optimizing scalability, and implementing CI/CD pipelines using Jenkins for CI and ArgoCD for CD. Proficient in Terraform, Docker, Kubernetes, and Python for automation.</p>
       <p>Single-handedly managed the entire cloud infrastructure, deployments, and operations across AWS and GCP for a fintech company, supporting multiple high-profile clients while ensuring high availability, security, and scalability.</p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Education</h2>
       <p><strong>Indian Institute of Information Technology Vadodara</strong>, Gandhinagar, Gujarat<br>
         Bachelor of Technology in Information Technology – <em>May 2024</em></p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Work Experience</h2>
 
       <div class="clearfix">
@@ -99,9 +140,9 @@
         <li>Moved apps from EC2 to EKS and created full deployment pipelines with Jenkins and ArgoCD.</li>
         <li>Used Terraform to automate AWS services (VPC, NAT, EC2, ALB, ASG, etc.)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Technical Skills</h2>
       <ul>
         <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, EKS, RDS, ECR, VPC, Load Balancer, Route 53, Cognito, Lambda, IAM)</li>
@@ -113,7 +154,7 @@
         <li><strong>Monitoring:</strong> Prometheus, Grafana</li>
         <li><strong>Tools:</strong> Linux Shell, VS Code</li>
       </ul>
-    </div>
+    </section>
   </div>
 </body>
 </html>
