@@ -89,6 +89,25 @@
         margin-top: 5px;
       }
     }
+
+    .download-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+
+    .download-btn:hover {
+      background-color: #2980b9;
+    }
   </style>
 </head>
 <body>
@@ -156,5 +175,8 @@
       </ul>
     </section>
   </div>
+
+  <!-- Fixed Download Button -->
+  <a href="Dilip-IIITV-Cloud-Devops.pdf" download class="download-btn" target="_blank">⬇️ Download Resume</a>
 </body>
 </html>
