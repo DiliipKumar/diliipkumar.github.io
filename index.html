@@ -90,42 +90,23 @@
       }
     }
 
-    .center-download {
-      text-align: center;
-      margin: 40px 0;
-    }
-
     .download-btn {
-      background: linear-gradient(135deg, #3498db, #2ecc71);
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
       color: white;
-      padding: 16px 32px;
-      font-size: 18px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
+      padding: 12px 20px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .download-btn::after {
-      content: "⬇️";
-      position: absolute;
-      right: 20px;
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+      z-index: 1000;
     }
 
     .download-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .download-btn:hover::after {
-      transform: translateY(3px);
+      background-color: #2980b9;
     }
   </style>
 </head>
@@ -193,11 +174,9 @@
         <li><strong>Tools:</strong> Linux Shell, VS Code</li>
       </ul>
     </section>
-
-    <!-- Centered Download Button -->
-    <div class="center-download">
-      <a href="Dilip-IIITV-Cloud-Devops.pdf" download class="download-btn">Download Resume</a>
-    </div>
   </div>
+
+  <!-- Fixed Download Button -->
+  <a href="Dilip-IIITV-Cloud-Devops.pdf" download class="download-btn" target="_blank">⬇️ Download Resume</a>
 </body>
 </html>
